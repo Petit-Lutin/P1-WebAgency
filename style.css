@@ -1,0 +1,152 @@
+@media screen and (max-width: 900px)
+
+{
+
+    header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav
+    {
+        text-align: center;
+        width:auto;
+    }
+
+    .slider
+    {
+        display: none;
+    }
+
+    .contenuServices
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan
+    {
+        width: auto;
+    }
+}
+
+body
+{
+    margin:auto;
+}
+
+header
+{
+    display: flex;
+    margin:auto;
+    align-items: center;
+    width:80%;
+ }
+
+li
+{
+    list-style-type: none;
+}
+
+header ul 
+{
+    display: flex;
+    flex:50%;
+}
+
+header li
+{
+    margin-right: 20px;
+}
+
+
+#logo
+{
+    flex: 50%;
+}
+
+.slider /*partie slider */
+{
+    width: 100%;
+    height: 550px;
+    background: url("images/slider/bg1.jpg") no-repeat center;
+    margin: auto;
+}
+
+.boutonInfo
+
+
+
+.blocServices /*partie services*/
+{
+    display: flex;
+}
+
+.introServices
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contenuServices
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenuServices p
+{
+    flex:50%;
+}
+
+th
+{
+    text-align: left;
+}
+
+.blocProjets /*partie projets/portfolio*/
+{
+    text-align: center;
+    margin: auto;
+}
+
+.imgFA
+{
+    font-size: 3em;
+}
+
+.portfolio
+{
+    margin: auto;
+    width: 25%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background: #e5e5e5;
+}
+
+.portfolio a
+{
+    text-decoration: none;
+    margin: 5px;
+    color: #64686d;
+    font-weight: bold;
+    
+}
+
+.portfolio a:hover
+{
+    background: #60b5dd;
+    color: white;
+    background-size: contain;
+    padding: 10px;
+    border-bottom: #468cad solid 3px;
+}
+
+fieldset /*partie contact */
+{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+}
