@@ -135,14 +135,17 @@ header {
     width: 80%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+  
     top: 0;
     left: 10%;
     background-color: #ffffff;
 
 }
 
-
+nav ul
+{
+    align-items: baseline;
+}
 
 
 li {
@@ -166,10 +169,21 @@ li a {
 
 header li a:hover {
     border-top: #60b5dd solid 3px;
-padding-top: 30px;
-background: #ffffff;
+    padding-top: 30px;
+    background: #ffffff;
 
 }
+
+/* pour activer directement l'effet sur accueil */
+header li:first-child
+{
+    border-top: #60b5dd solid 3px;
+    padding-top: 30px;
+    background: #ffffff;
+ 
+
+}
+
 
 #logo {
     flex: 50%;
@@ -329,8 +343,6 @@ strong {
 
 
 
-
-
 .iconeService {
     min-width: 60px;
 }
@@ -350,9 +362,7 @@ strong {
     border-radius: 50%;
     margin: -0.5em;
     vertical-align: middle;
-
 }
-
 
 
 .pointbleu {
@@ -370,7 +380,7 @@ strong {
 #blocProjets {
     text-align: center;
     margin: auto;
-    padding: 10px;
+    padding: 10px 0 25px 0;
     background: #f5f5f5;
 }
 
@@ -412,6 +422,26 @@ strong {
 
 #tagsPortfolio ul li:first-child {
     border-radius: 5px 0 0 5px;
+
+/*pour activer directement l'effet hover sur le 1er enfant */
+    background: #60b5dd;
+    border-bottom: #468cad solid 3px;
+    height: 15px;
+}
+
+#tagsPortfolio li:first-child>a {
+    /*action 1 -> action 2 */
+    color: #ffffff;
+}
+
+
+#tagsPortfolio li:first-child>.flechebas {
+    display: inline;
+    font-size: 1.5em;
+    position: relative;
+    top: -2px;
+    text-align: center;
+    color: #468cad;
 }
 
 #tagsPortfolio ul li:last-child {
@@ -457,87 +487,74 @@ strong {
 
 figure {
     position: relative;
+    overflow: hidden;
 }
 
 figure img {
     width: 261px;
+
 }
 
-/*.grillePortfolio li {
-    width: 261px;
-    margin-bottom: 50px;
-}*/
 
 figcaption {
     display: none;
-    position: absolute;
     text-align: left;
-    top: 100px;
-  
-}
+    width: 100%;
+    height: 80px;
 
-figure:hover>figcaption {
-    display: block;
-    background: rgba(119, 116, 111, 5);
-    padding: 2px 0 2px 0 ;
-    opacity: 0.5;
-    width: 261px;
-    margin: auto;
-   
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
 
 }
 
 
 figure:hover>figcaption {
     display: block;
-    background: rgba(119, 116, 111, 5);
-    padding: 2px 0 2px 0 ;
-  
-    width: 261px;
-    margin: auto;
+    background: rgba(117, 117, 118, 0.6);
+    position: absolute;
+
+    bottom: 0px;
+    padding: 0 0 -5 5px;
+
     color: #ffffff;
     font-family: 'roboto', Arial, Helvetica, sans-serif;
-
 }
 
-/*.bgProjet1 {
-    background: url("images/portfolio/01s.jpg") no-repeat;
-    width: 261px;
-    height: 174px;
-} */
+figcaption strong
+{
+    color: #ffffff;
+    font-size: 1.1em;
+}
 
 
-
-
-
-.texteProjet h3 {
-    font-weight: bold;
-    font-size: 1em;
+figcaption  p
+{
+    margin: 10px ;
 }
 
 
 
-
-
+.oeil {
+    display: none;
+}
 
 figure:hover>.oeil {
-    font-size: 1.2em;
+    display: block;
+    font-size: 0.9em;
     color: #ffffff;
     background: #4ea3b1;
     padding: 10px;
     border: 2px #ffffff solid;
     border-radius: 50%;
-    width: 25px;
-  margin-right: -15px;
-    justify-content: center;
+   width: 20px;
+    position: absolute;
+    top: 45%;
+    right: 10px;
+
 }
 
 
 /*----------------------------- partie contact */
 
-#formulaire
-{
+#formulaire {
     position: relative;
 }
 
@@ -553,7 +570,7 @@ iframe {
     width: 100%;
     height: 650px;
     border: none;
-    
+
 }
 
 
