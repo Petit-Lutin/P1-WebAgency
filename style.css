@@ -1,152 +1,609 @@
 @media screen and (max-width: 900px)
+/*pour les écrans de moins de 900px de large */
 
-{
-
-    header
     {
+
+    header {
         display: flex;
         flex-direction: column;
     }
 
-    nav
-    {
+    nav {
         text-align: center;
-        width:auto;
+        width: auto;
     }
 
-    .slider
-    {
+    #slider {
         display: none;
     }
 
-    .contenuServices
-    {
+    .contenuServices {
         display: flex;
         flex-direction: column;
     }
 
-    .plan
-    {
+    .tableau {
+        flex: 100%;
+    }
+
+    .plan {
         width: auto;
+    }
+
+
+}
+
+
+@media all and (max-device-width: 480px)
+/* règles CSS pour les mobiles */
+
+
+    {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #slider {
+        display: none;
+    }
+
+    .contenuServices {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #illuServices {
+        display: none;
+    }
+
+    .tableau {
+        flex: 100%;
     }
 }
 
-body
-{
-    margin:auto;
+@font-face {
+    font-family: 'robotoregular';
+    src: url('webfonts/Roboto-Regular-webfont.eot');
+    src: url('webfonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Roboto-Regular-webfont.woff2') format('woff2'),
+        url('webfonts/Roboto-Regular-webfont.woff') format('woff'),
+        url('webfonts/Roboto-Regular-webfont.ttf') format('truetype'),
+        url('webfonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-header
-{
-    display: flex;
-    margin:auto;
-    align-items: center;
-    width:80%;
- }
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: url('webfonts/RobotoCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('webfonts/RobotoCondensed-Bold-webfont.eot');
+    url('webfonts/RobotoCondensed-Bold-webfont.woff2') format('woff2') url('webfonts/RobotoCondensed-Bold-webfont.woff') format('woff'),
+    url('webfonts/RobotoCondensed-Bold-webfont.ttf') format('truetype'),
+    url('webfonts/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-li
-{
+
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('webfonts/RobotoCondensed-Regular-webfont.eot');
+    src: url('webfonts/RobotoCondensed-Regular-webfont.eot?#iefix') format('embedded-opentype');
+    url('webfonts/RobotoCondensed-Regular-webfont.woff2') format('woff2'),
+    url('webfonts/RobotoCondensed-Regular-webfont.woff') format('woff'),
+    url('webfonts/RobotoCondensed-Regular-webfont.ttf') format('truetype'),
+    url('webfonts/RobotoCondensed-Regular-webfont.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('webfontsRoboto-Light-webfont.eot');
+    src: url('webfontsRoboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfontsRoboto-Light-webfont.woff2') format('woff2'),
+        url('webfontsRoboto-Light-webfont.woff') format('woff'),
+        url('webfontsRoboto-Light-webfont.ttf') format('truetype'),
+        url('webfontsRoboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: auto;
+    color: #272727;
+    font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+header {
+
+    background-color: #ffffff;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 100px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 5;
+}
+
+.fixedheader {
+
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    left: 10%;
+    background-color: #ffffff;
+
+}
+
+
+
+
+li {
     list-style-type: none;
 }
 
-header ul 
-{
+header ul {
     display: flex;
-    flex:50%;
-}
-
-header li
-{
-    margin-right: 20px;
-}
-
-
-#logo
-{
     flex: 50%;
 }
 
-.slider /*partie slider */
-{
+header li {
+    margin-right: 20px;
+    position: relative;
+}
+
+li a {
+    text-decoration: none;
+    color: #5d5d5d;
+}
+
+header li a:hover {
+    border-top: #60b5dd solid 3px;
+padding-top: 30px;
+background: #ffffff;
+
+}
+
+#logo {
+    flex: 50%;
+}
+
+
+
+/*partie slider */
+
+#slider {
+    overflow: hidden;
+    /*  border: red solid 1px;*/
+    top: 100px;
     width: 100%;
-    height: 550px;
-    background: url("images/slider/bg1.jpg") no-repeat center;
-    margin: auto;
+    position: relative;
+
 }
 
-.boutonInfo
-
-
-
-.blocServices /*partie services*/
-{
-    display: flex;
+#imageSlider {
+    width: 100%;
 }
 
-.introServices
-{
-    text-align: center;
-    margin-top: 30px;
+#flecheGauche {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #ffffff;
+    background: #424246;
+    padding: 10px 15px 10px 5px;
+    border-radius: 5px 50px 50px 5px;
+    /*top l, top r, bot r, bot l*/
+}
+
+strong {
+    color: #5cadd3;
+    font-weight: bold;
+}
+
+#descriptionslider {
+
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 40%;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'robotolight', Arial, Helvetica, sans-serif;
+
+}
+
+#descriptionslider h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#descriptionslider p {
+    margin-bottom: 15px;
+}
+
+
+#flecheDroite {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 2em;
+    color: #ffffff;
+    border-radius: 50px 0 0 50px;
+    background: #424246;
+    padding: 10px 5px 10px 15px;
+    transform: translateY(-50%);
+}
+
+
+#boutonInfo {
+    position: absolute;
+    left: 0px;
+    text-decoration: none;
+    color: white;
+    border-bottom: #4494bb solid 2px;
+    background: #5cadd3;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+
+
+
+
+/* ------------------------ partie services*/
+
+#blocServices {
+    font-family: 'roboto_condensedregular', Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin-top: 80px;
     margin-bottom: 30px;
 }
 
-.contenuServices
-{
+
+.introServices {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'roboto_condensedregular', Arial, Helvetica, sans-serif;
+
+}
+
+.introServices h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+
+.pointBleuTitre {
+    color: #5cadd3;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 5px;
+    position: relative;
+    font-size: 0.9em;
+    z-index: 2;
+}
+
+.ligneTitre {
+    border-bottom: #ebebeb 1px solid;
+    width: 120px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.pointEtLigne {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*  margin-bottom: -10px;*/
 }
 
-.contenuServices p
-{
-    flex:50%;
+
+
+.contenuServices {
+    display: flex;
+    margin-top: -20px;
 }
 
-th
-{
-    text-align: left;
+#illuServices {
+    flex: 50%;
 }
 
-.blocProjets /*partie projets/portfolio*/
-{
+.listeServices li {
+    display: flex;
+    align-items: center;
+    font-family: 'roboto_condensedregular', Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.iconeService {
+    min-width: 60px;
+}
+
+
+.textDescriptionService {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imgFontAwesome {
+    font-size: 1.5em;
+    color: #60b5dd;
+    border: #d7d7d7 1px solid;
+    padding: 0.7em;
+    border-radius: 50%;
+    margin: -0.5em;
+    vertical-align: middle;
+
+}
+
+
+
+.pointbleu {
+    color: #5cadd3;
+    font-size: 0.8em;
+    margin-right: 0.8em;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 2px;
+}
+
+
+/*----------------------------------- partie projets/portfolio*/
+#blocProjets {
     text-align: center;
     margin: auto;
+    padding: 10px;
+    background: #f5f5f5;
 }
 
-.imgFA
-{
-    font-size: 3em;
+
+
+.descriptionProjets h2 {
+    padding-bottom: 20px;
 }
 
-.portfolio
-{
-    margin: auto;
-    width: 25%;
+.descriptionProjets h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+#tagsPortfolio {
+
     margin-bottom: 20px;
-    padding: 10px 0;
-    background: #e5e5e5;
+    position: relative;
+    text-align: center;
 }
 
-.portfolio a
-{
-    text-decoration: none;
-    margin: 5px;
+
+#tagsPortfolio ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+
+#tagsPortfolio li {
+    display: flex;
+    flex-direction: column;
     color: #64686d;
+    background: #e5e5e5;
+    padding: 10px;
     font-weight: bold;
+}
+
+#tagsPortfolio ul li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+#tagsPortfolio ul li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.flechebas {
+    display: none;
+}
+
+
+#tagsPortfolio li:hover {
+    background: #60b5dd;
+    border-bottom: #468cad solid 3px;
+    height: 15px;
+}
+
+
+#tagsPortfolio li:hover>a {
+    /*action 1 -> action 2, donc "quand on pointe sur la puce,
+    on demande aux liens de ce conduire comme suit */
+    color: #ffffff;
+}
+
+#tagsPortfolio li:hover>.flechebas {
+    display: inline;
+    font-size: 1.5em;
+    position: relative;
+    top: -2px;
+    text-align: center;
+    color: #468cad;
+}
+
+.grillePortfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+
+
+}
+
+figure {
+    position: relative;
+}
+
+figure img {
+    width: 261px;
+}
+
+/*.grillePortfolio li {
+    width: 261px;
+    margin-bottom: 50px;
+}*/
+
+figcaption {
+    display: none;
+    position: absolute;
+    text-align: left;
+    top: 100px;
+  
+}
+
+figure:hover>figcaption {
+    display: block;
+    background: rgba(119, 116, 111, 5);
+    padding: 2px 0 2px 0 ;
+    opacity: 0.5;
+    width: 261px;
+    margin: auto;
+   
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+
+}
+
+
+figure:hover>figcaption {
+    display: block;
+    background: rgba(119, 116, 111, 5);
+    padding: 2px 0 2px 0 ;
+  
+    width: 261px;
+    margin: auto;
+    color: #ffffff;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+
+}
+
+/*.bgProjet1 {
+    background: url("images/portfolio/01s.jpg") no-repeat;
+    width: 261px;
+    height: 174px;
+} */
+
+
+
+
+
+.texteProjet h3 {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+
+
+
+
+figure:hover>.oeil {
+    font-size: 1.2em;
+    color: #ffffff;
+    background: #4ea3b1;
+    padding: 10px;
+    border: 2px #ffffff solid;
+    border-radius: 50%;
+    width: 25px;
+  margin-right: -15px;
+    justify-content: center;
+}
+
+
+/*----------------------------- partie contact */
+
+#formulaire
+{
+    position: relative;
+}
+
+
+.plan {
+
+    border: none;
+    position: relative;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 650px;
+    border: none;
     
 }
 
-.portfolio a:hover
-{
-    background: #60b5dd;
-    color: white;
-    background-size: contain;
-    padding: 10px;
-    border-bottom: #468cad solid 3px;
-}
 
-fieldset /*partie contact */
-{
+fieldset {
     display: flex;
     flex-direction: column;
-    width:30%;
+    width: 250px;
+    height: 450px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: #f5f5f5;
+}
+
+fieldset #submit {
+    width: 60%;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-bottom: #4494bb solid 2px;
+    background: #5cadd3;
+    padding: 10px;
+}
+
+
+
+
+
+footer {
+    padding-top: 15px;
+    display: flex;
+    padding-bottom: 15px;
+    ;
+}
+
+footer nav {
+    margin: auto;
+}
+
+footer ul {
+    display: flex;
+
+}
+
+footer ul li {
+    margin-right: 15px;
+
+}
+
+footer ul li a {
+
+    color: #468cad;
 }
