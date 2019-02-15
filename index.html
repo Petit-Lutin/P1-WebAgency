@@ -5,12 +5,23 @@
 <head>
 
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>WebAgency : l'agence Web de tous vos projets</title>
+	<meta name="description" content="webagency, l'agence de tous vos projets web">
+
+
+	<meta property="og:title" content="WebAgency, l'agence de tous vos projets web !" />
+	<meta property="og:type" content="website" />
+	<!-- <meta property="og:url" content="" />-->
+	<meta property="og:image" content="http://zupimages.net/viewer.php?id=19/07/ybww.jpg" />
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
 	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
-	<title>WebAgency : l'agence Web de tous vos projets</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css" />
+
+
+
 </head>
 
 
@@ -18,14 +29,16 @@
 	<header>
 		<div id="fixedheader">
 
-			<p id="logo"> <a href="index.html"> <img src="images/logo.png" alt="logo" /> </a></p>
+			<div id="logo"> <a href="index.html"> <img src="images/logo.png" alt="Logo de la WebAgency, création de sites web" />
+				</a></div>
 
 			<nav>
 				<ul>
-					<li><a href="index.html">Accueil</a> </li>
-					<li><a href="#services">Services</a> </li>
-					<li><a href="#portfolio">Portfolio</a> </li>
-					<li><a href="#contact">Contact</a> </li>
+					<li><a href="index.html"><span class="iconeMenu"><i class="fas fa-home"></i></span> <span class="texteMenu">Accueil</span></a>
+					</li>
+					<li><a href="#services"><span class="iconeMenu"><i class="fas fa-briefcase"></i></span> <span class="texteMenu">Services</span></a></li>
+					<li><a href="#portfolio"><span class="iconeMenu"><i class="fas fa-palette"></i></span> <span class="texteMenu">Portfolio</span></a></li>
+					<li><a href="#contact"><span class="iconeMenu"><i class="fas fa-envelope"></i></span> <span class="texteMenu">Contact</span></a></li>
 				</ul>
 			</nav>
 
@@ -36,9 +49,9 @@
 
 	<section id="slider">
 
-		
-			<img src="images/slider/bg1.jpg" alt="slider de WebAgency" id="imageSlider" />
-		
+
+		<img src="images/slider/bg1.jpg" alt="slider de WebAgency" id="imageSlider" />
+
 
 		<div id="flecheGauche"><i class="fas fa-angle-left"></i></div>
 
@@ -60,7 +73,7 @@
 	<section id="blocServices">
 
 		<div class="introServices">
-			<h1 id="services">Nos Services</h1>
+			<h2 id="services">Nos Services</h2>
 			<div class="pointEtLigne">
 				<span class="pointBleuTitre"> <i class="fas fa-circle"></i></span>
 				<span class="ligneTitre"> </span>
@@ -70,7 +83,7 @@
 
 		<div class="contenuServices">
 
-			<p id="illuServices"><img src="images/main-feature.png" alt="imageServices" /></p>
+			<figure id="illuServices"><img src="images/main-feature.png" alt="Image d'ordinateur pour ilustrer les services proposés de la WebAgency" /></figure>
 
 
 
@@ -82,8 +95,8 @@
 						<span class="pointbleu"> <i class="fas fa-circle"></i></span>
 					</div>
 					<div class="texteDescriptionService">
-						<h2>UX design</h2>
-						<p> Il est impensable aujourd'hui qu'un site web ne soit pas intuitif en terme de navigation.
+						<h3>UX design</h3>
+						<p> Il est indipensable aujourd'hui qu'un site web soit intuitif en terme de navigation.
 							En fonction de votre besoin, nous vous aidons à créer la meilleure expérience utilisateur sur votre site !
 						</p>
 					</div>
@@ -95,7 +108,7 @@
 						<span class="pointbleu"> <i class="fas fa-circle"></i></span>
 					</div>
 					<div class="texteDescriptionService">
-						<h2>UI design</h2>
+						<h3>UI design</h3>
 						<p>Votre site est déjà fonctionnel et compréhensible par vos utilisateurs, mais son design pourrait être amélioré
 							?
 							Nous pouvons vous aider ! </p>
@@ -108,8 +121,8 @@
 						<span class="pointbleu"> <i class="fas fa-circle"></i></span>
 					</div>
 					<div class="texteDescriptionService">
-						<h2>SEO</h2>
-						<p>Un beau site bien pensé, c'est bien,un site bien référencé, c'est mieux ! Nous vous proposons plusieurs
+						<h3>SEO</h3>
+						<p>Un beau site bien pensé, c'est bien, un site bien référencé, c'est mieux ! Nous vous proposons plusieurs
 							formules pour optimiser le positionnement de votre site dans les moteurs de recherche.</p>
 					</div>
 				</li>
@@ -126,7 +139,7 @@
 	<section id="blocProjets">
 
 		<div class="descriptionProjets">
-			<h1>Nos projets</h1>
+			<h2 id="portfolio">Nos projets</h2> 
 			<div class="pointEtLigne">
 				<span class="pointBleuTitre"> <i class="fas fa-circle"></i></span>
 				<span class="ligneTitre"> </span>
@@ -158,107 +171,114 @@
 
 
 		<ul id="grillePortfolio">
-			
+
 			<li>
-				<figure>
+				<figure class="figPortfolio">
 					<img src="images/portfolio/01.jpg" alt="Projet Web 1 de la WebAgency" />
-					<div class="oeil"><i class="far fa-eye"></i></div>
+
 					<figcaption>
 						<p><strong>Lunettes City</strong><br /></p>
 						<p>Surfez en y voyant clair !</p>
-					
+						<i class="far fa-eye"></i>
 					</figcaption>
-					
+
 				</figure>
 			</li>
 
 
 			<li>
-				<figure>
+				<figure class="figPortfolio">
 					<img src="images/portfolio/02.jpg" alt="Projet Web 2 de la WebAgency" />
-					<div class="oeil"><i class="far fa-eye"></i></div>
+
 					<figcaption>
 						<p><strong>Paper Rabbit</strong><br /></p>
 						<p>Création d'un site vitrine.</p>
+						<i class="far fa-eye"></i>
 					</figcaption>
-					
+
 				</figure>
 			</li>
 
 
 			<li>
-				<figure>
+				<figure class="figPortfolio">
 					<img src="images/portfolio/03.jpg" alt="Projet Web 3 de la WebAgency" />
-					<div class="oeil"><i class="far fa-eye"></i></div>
+					
 					<figcaption>
 						<p><strong>Original Pompadour</strong><br /></p>
 						<p>Création d'un site marchand.</p>
+						<i class="far fa-eye"></i>
 					</figcaption>
-					
+
 				</figure>
 			</li>
 
 
 			<li>
-				<figure>
+				<figure class="figPortfolio">
 					<img src="images/portfolio/04.jpg" alt="Projet Web 4 de la WebAgency" />
-					<div class="oeil"><i class="far fa-eye"></i></div>
+					
 					<figcaption>
 						<p><strong>MonCV.com</strong><br /></p>
 						<p>Création d'un site marchand.</p>
+						<i class="far fa-eye"></i>
 					</figcaption>
-				
+
 				</figure>
 			</li>
 
 
 			<li>
-				<figure>
+				<figure class="figPortfolio">
 					<img src="images/portfolio/05.jpg" alt="Projet Web 5 de la WebAgency" />
-					<div class="oeil"><i class="far fa-eye"></i></div>
+					
 					<figcaption>
 						<p><strong>Monshoppingbag.fr</strong><br /></p>
 						<p>Création d'un site marchand.</p>
+						<i class="far fa-eye"></i>
 					</figcaption>
-				
+
 				</figure>
 			</li>
 
 			<li>
-				<figure>
+				<figure class="figPortfolio">
 					<img src="images/portfolio/06.jpg" alt="Projet Web 6 de la WebAgency" />
-					<div class="oeil"><i class="far fa-eye"></i></div>
+					
 					<figcaption>
 						<p><strong>Urban today.</strong><br /></p>
 						<p>Création d'une landing page.</p>
+						<i class="far fa-eye"></i>
 					</figcaption>
-					
+
 				</figure>
 			</li>
 
 
 			<li>
-				<figure>
+				<figure class="figPortfolio">
 					<img src="images/portfolio/07.jpg" alt="Projet Web 7 de la WebAgency" />
-					<div class="oeil"><i class="far fa-eye"></i></div>
+			
 					<figcaption>
 						<p><strong>Flying Rocket</strong><br /></p>
 						<p>Création d'un site marchand.</p>
+						<i class="far fa-eye"></i>
 					</figcaption>
-					
+
 				</figure>
 			</li>
 
 
 			<li>
-				<figure>
+				<figure class="figPortfolio">
 					<img src="images/portfolio/08.jpg" alt="Projet Web 8 de la WebAgency" />
-					<div class="oeil"><i class="far fa-eye"></i></div>
+					
 					<figcaption>
 						<p><strong>Influ-life</strong><br /></p>
 						<p>Blog personnalisé.</p>
+						<i class="far fa-eye"></i>
 					</figcaption>
-					
+
 				</figure>
 			</li>
 
