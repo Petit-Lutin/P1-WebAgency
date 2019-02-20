@@ -312,10 +312,14 @@ h3 {
 
 
 
-.descriptionProjets h2 {
-    padding-bottom: 20px;
+
+.descriptionProjets figure img {
+    display: none;
 }
 
+.descriptionProjets figure p {
+    display: inline;
+}
 
 #tagsPortfolio {
 
@@ -559,7 +563,7 @@ fieldset input {
 
 textarea {
     border: none;
-    /* min-height: 40px;*/
+
 
 }
 
@@ -706,6 +710,11 @@ footer ul li a {
 
     #descriptionSlider {
         top: 10%;
+        left: 10%;
+    }
+
+    #descriptionSlider h1 {
+        margin-top: 0;
     }
 
     #flecheGauche,
@@ -827,7 +836,7 @@ footer ul li a {
 
     #fixedheader {
         display: flex;
-        width:100%;
+        width: 100%;
         flex-wrap: wrap;
         height: 150px;
         align-items: center;
@@ -870,15 +879,26 @@ footer ul li a {
     }
 
     #slider {
+        overflow: hidden;
+        z-index: 3;
         margin-top: 150px;
         height: 200px;
-        background-image: url(images/animated-number/bg.jpg);
+        background: url('images/slider/bg1.jpg') left;
     }
 
+    #slider img {
+        display: none;
+    }
 
     #descriptionSlider {
-        top: 2%;
-        width: 90%;
+        bottom: 2%;
+        left: 15%;
+
+        width: 80%;
+    }
+
+    #descriptionSlider h1 {
+        margin-top: 5px;
     }
 
     h1 {
@@ -893,216 +913,86 @@ footer ul li a {
         font-size: 1.2em;
     }
 
+    #tagsPortfolio img {
+        display: block;
+        width: 100%;
+        opacity: 0.7;
+        position: absolute;
+    }
 
-    #grillePortfolio li {
+    .descriptionProjets figure {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+
+    .descriptionProjets figure img {
+        display: block;
+        padding-top: 20px;
         width: 100%;
     }
 
-
-    figcaption {
-
-        height: 80px;
-
-    }
-
-    /*  #fixedheader {
-
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #logo {
-
-        width: 100%;
-        flex: 100%;}
-        /* padding: 0; */
-    /*
-    }
-
-    header nav {
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        width: 100%;
-    }
-
-    header nav ul {
-
-        display: flex;
-        margin: auto;
-        justify-content: space-evenly;
-        align-items: baseline;
-        padding: 0;
-        border: 0;
-    }
-
-    header ul li {
-        padding: 5px 0;
-        border: 0;
-        font-size: 0.8em;
-    }
-
-
-    header ul li:first-child,
-    header ul li:hover,
-    header ul a,
-    header a:hover {
-        border: none;
-    }
-
-    .texteMenu {
-        display: none;
-    }
-
-    .iconeMenu {
-        display: inline;
-        font-size: 2em;
-    }
-
-    #slider {
-        top: 20px;
-        margin-bottom: 30px;
-
-    }
-
-
-
-
-    #descriptionSlider {
-
-        top: 10%;
-        left: 10%;
-        width: 50%;
-    }
-
-    #descriptionSlider h1 {
-        font-size: 1.5em;
-    }
-
-    #flecheGauche,
-    #flecheDroite {
-        font-size: 0.8em;
-    }
-
-
-
-   
-
-    .contenuServices {
-        display: flex;
-        flex-direction: column;
+    .descriptionProjets figure p {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 40%;
+        text-align: center;
+        color: white;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        font-weight: bold;
     }
 
     #tagsPortfolio ul {
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
+        flex-direction: column;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
 
-    }
-
-
-
-
-    #tagsPortfolio li:first-child,
-    #tagsPortfolio li:hover {
-        /*pour activer directement l'effet hover sur le 1er enfant et au survol */
-    /* background: #60b5dd;
-        border-bottom: none;
-        height: 15px;
-    }
-
-    #tagsPortfolio li:first-child>.flechebas,
-    #tagsPortfolio li:hover>.flechebas,
-    .flechebas,
-    .oeil {
-        display: none;
-    }
-
-    #tagsPortfolio li:hover {
-        background: #64686d;
-        border-bottom: none;
-        height: 15px;
-    }
-
-    #grillePortfolio {
-        /* display: flex; */
-    /*  flex-direction: column;
-        justify-content: center;
-
-        /* width: 100%; */
-    /*
     }
 
 
     #grillePortfolio li {
         width: 100%;
-        margin: auto;
-        /* padding-bottom: 10px; */
-    /*  }
-
-    #grillePortfolio li img {
-        width: 100%;
-        height: auto;
     }
 
-    figure>figcaption {
-        display: block;
-        background: rgba(117, 117, 118, 0.6);
-        position: absolute;
-        bottom: 0px;
-        color: #ffffff;
-        font-family: 'Roboto', Arial, Helvetica, sans-serif;
-        z-index: 1;
+    #tagsPortfolio li:first-child {
+        border-radius: 5px 5px 0 0;
+    }
+
+
+    #tagsPortfolio li:last-child {
+        border-radius: 0 0 5px 5px;
+    }
+
+    figcaption {
+        height: 80px;
     }
 
 
 
-    figure>.oeil {
-        display: block;
-        font-size: 0.9em;
-        color: #ffffff;
-        background: #4ea3b1;
-        padding: 10px;
-        border: 2px #ffffff solid;
-        border-radius: 50%;
-        width: 20px;
-        position: absolute;
-        top: 52%;
-        right: 10px;
-        z-index: 2;
-    }
-
-    .plan,
     iframe {
-        display: none;
-    }
-
-    #formulaire {
-        width: 100%;
-        background: rgba(245, 245, 245, 0.83);
+        height: 200px;
     }
 
 
-
-    #formulaire form {
-        justify-content: center;
-        position: relative;
-        padding: 0;
-    }
-
-    #formulaire fieldset {
-        display: flex;
+    form {
         position: relative;
         margin: auto;
-        /* flex-direction: column; */
-    /*  height: 450px;
-        background: rgba(245, 245, 245, 0.83);
-        border: none;
-
+        width: 100%;
+        right: unset;
+        bottom: unset;background: #60b5dd;
+        
     }
 
+    fieldset {
+        margin: auto;
+        width: unset;
+        padding:20px;
+        
+    }
 
-
-}*/
+  textarea{
+      min-width: 95%;
+  }
