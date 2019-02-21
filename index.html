@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<title>WebAgency : l'agence Web de tous vos projets</title>
 
+
 	<!-- OpenGraph-->
 
 	<meta property="og:title" content="WebAgency, l'agence de tous vos projets web !" />
@@ -15,6 +16,7 @@
 	<meta property="og:url" content="https://petit-lutin.github.io/WebAgency/" />
 	<meta property="og:image" content="https://petit-lutin.github.io/WebAgency/slider/bg1.jpg" />
 	<meta property="og:description" content="Envie d'affirmer ou d'améliorer votre présence sur le web ? La WebAgency est à votre écoute !" />
+	<meta name="description" content="Envie d'affirmer ou d'améliorer votre présence sur le web ? La WebAgency est à votre écoute !" />
 
 
 	<!-- Twitter Card data -->
@@ -26,25 +28,22 @@
 	<meta name="twitter:creator" content="@WebAgency_autor">
 	<!-- Twitter Summary card images must be at least 200x200px -->
 
-	<meta name="twitter:image" content="http://www.example.com/image.jpg">
+	<meta name="twitter:image" content="https://petit-lutin.github.io/WebAgency/slider/bg1.jpg">
 
-
+	<!-- Ajout de d'éléments de style : FontAwesome, police, CSS -->
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
 	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
 
-
-
-
-
-
 </head>
 
 
 <body>
+
 	<header>
+		<!-- Header composé du logo et du menu -->
 		<div id="fixedheader">
 
 			<div id="logo"> <a href="index.html"> <img src="images/logo.png" alt="Logo de la WebAgency, agence de création de sites web" />
@@ -65,11 +64,9 @@
 
 
 
-	<section id="slider">
-
+	<section id="slider">	<!-- Partie slider -->
 
 		<img src="images/slider/bg1.jpg" alt="WebAgency, tout pour vous aider à créer votre site web" id="imageSlider" />
-
 
 		<div id="flecheGauche"><i class="fas fa-angle-left"></i></div>
 
@@ -84,11 +81,10 @@
 		<div id="Defilement">
 			<div id="barreDefilement"></div>
 		</div>
-
 	</section>
 
 
-	<section id="blocServices">
+	<section id="blocServices">	<!-- Les services de la WebAgency -->
 
 		<div class="introServices">
 			<h2 id="services">Nos Services</h2>
@@ -100,10 +96,7 @@
 		</div>
 
 		<div class="contenuServices">
-
 			<figure id="illuServices"><img src="images/main-feature.png" alt="Image d'ordinateur pour ilustrer les services proposés de la WebAgency" /></figure>
-
-
 
 			<ul class="listeServices">
 
@@ -149,12 +142,10 @@
 
 		</div>
 
-
-
 	</section>
 
 
-	<section id="blocProjets">
+	<section id="blocProjets"> <!--Réalisations de la WebAgency-->
 
 		<div class="descriptionProjets">
 			<h2 id="portfolio">Nos projets</h2>
@@ -166,13 +157,7 @@
 				<img src="images/slider/bg2.jpg" alt="Réalisez vos projets avec la WebAgency !">
 				<p>Ils nous ont fait confiance !</p>
 			</figure>
-
-
-
-
 		</div>
-
-
 
 		<nav id="tagsPortfolio">
 
@@ -211,7 +196,6 @@
 				</figure>
 			</li>
 
-
 			<li>
 				<figure class="figPortfolio">
 					<img src="images/portfolio/02.jpg" alt="Projet Web 2 de la WebAgency, création de site vitrine" />
@@ -224,7 +208,6 @@
 
 				</figure>
 			</li>
-
 
 			<li>
 				<figure class="figPortfolio">
@@ -239,7 +222,6 @@
 				</figure>
 			</li>
 
-
 			<li>
 				<figure class="figPortfolio">
 					<img src="images/portfolio/04.jpg" alt="Projet Web 4 de la WebAgency, création de site marchand ou e-commerce" />
@@ -252,7 +234,6 @@
 
 				</figure>
 			</li>
-
 
 			<li>
 				<figure class="figPortfolio">
@@ -280,7 +261,6 @@
 				</figure>
 			</li>
 
-
 			<li>
 				<figure class="figPortfolio">
 					<img src="images/portfolio/07.jpg" alt="Projet Web 7 de la WebAgency, création de site marchand ou e-commerce" />
@@ -293,7 +273,6 @@
 
 				</figure>
 			</li>
-
 
 			<li>
 				<figure class="figPortfolio">
@@ -310,14 +289,10 @@
 
 		</ul>
 
-
-
 	</section>
 
 
-
-
-	<section id="formulaire">
+	<section id="formulaire"> <!-- Formulaire de contact-->
 		<div class="plan">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10496.275998043811!2d2.353619746274324!3d48.87596116862623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e0cad24b34d%3A0x50b82c368941ae0!2s10e+Arrondissement%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1547200112287"
 			 allowfullscreen></iframe>
@@ -333,15 +308,13 @@
 				</div>
 
 				<p class="LigneARemplir">
-
 					<input type="text" name="nom" placeholder="Votre nom" required />
 					<!-- name sert à recevoir l'information en PHP, id réfère au label // ici économie du label
-				puisque pas de texte avant les zones à remplir-->
+					puisque pas de texte avant les zones à remplir-->
 				</p>
 
 				<p class="LigneARemplir">
-
-					<input type="email" name="nom" placeholder="E-mail" required />
+					<input type="email" name="email" placeholder="E-mail" required />
 				</p>
 
 				<p class="LigneARemplir">
@@ -352,29 +325,12 @@
 					<textarea name="message" id="message" cols="33" rows="10" required></textarea>
 				</div>
 
-
-
 				<input type="submit" id="submit" value="Envoyer le message" />
 
 			</fieldset>
-
-
 		</form>
 
 	</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<footer>
 		<!--
