@@ -579,9 +579,7 @@ footer ul li a {
         font-size: 1.3em;
     }
 
-    #illuServices {
-        flex: 100%;
-    }
+
 
     #grillePortfolio {
         display: flex;
@@ -597,7 +595,7 @@ footer ul li a {
 
     figcaption {
         font-size: 0.9em;
-        height:auto;
+        height: auto;
     }
 
 }
@@ -763,9 +761,9 @@ footer ul li a {
         padding: 5px;
     }
 
-#boutonInfo{
-    padding: 7px;
-}
+    #boutonInfo {
+        padding: 7px;
+    }
 
     .texteMenu {
         display: none;
@@ -797,9 +795,11 @@ footer ul li a {
     #descriptionSlider h1 {
         margin-top: 5px;
     }
-#descriptionSlider p{
-    margin-top:-15px;
-}
+
+    #descriptionSlider p {
+        margin-top: -15px;
+    }
+
     h1 {
         font-size: 1.5em;
     }
@@ -810,6 +810,10 @@ footer ul li a {
 
     h3 {
         font-size: 1.2em;
+    }
+
+    #illuServices {
+        flex: 100%;
     }
 
     #tagsPortfolio img {
