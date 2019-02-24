@@ -24,7 +24,6 @@ header {
 }
 
 
-
 li {
     list-style-type: none;
 }
@@ -518,12 +517,12 @@ textarea {
 }
 
 
-/*ajouté mais disqualifiant !
+
 footer {
     padding-top: 15px;
     display: flex;
     padding-bottom: 15px;
-    ;
+    background: #f5f5f5;
 }
 
 footer nav {
@@ -543,7 +542,7 @@ footer ul li {
 footer ul li a {
 
     color: #468cad;
-}*/
+}
 
 
 @media screen and (min-width:901px) and (max-width: 1140px)
