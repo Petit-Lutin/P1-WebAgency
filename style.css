@@ -517,34 +517,6 @@ textarea {
 }
 
 
-
-footer {
-    padding-top: 15px;
-    display: flex;
-    padding-bottom: 15px;
-    background: #f5f5f5;
-}
-
-footer nav {
-    margin: auto;
-}
-
-footer ul {
-    display: flex;
-
-}
-
-footer ul li {
-    margin-right: 15px;
-
-}
-
-footer ul li a {
-
-    color: #468cad;
-}
-
-
 @media screen and (min-width:901px) and (max-width: 1140px)
 
 /*pour les petits écrans d'ordinateurs*/
