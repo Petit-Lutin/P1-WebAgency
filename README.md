@@ -1,2 +1,2 @@
 # WebAgency
-I'm currently working on a student project : a website. I don't expect it to work perfectly but I'm working on it !
+Let's pretend I am working as a front-end developper for a WebAgency which needs a rebuilt of their website.
