@@ -584,6 +584,12 @@ textarea {
         height: 80px;
     }
 
+    header {
+        overflow: auto;
+        position: absolute;
+        z-index: 1;
+    }
+
     header li {
         position: relative;
     }
@@ -645,7 +651,6 @@ textarea {
     }
 
     #illuServices {
-
         margin: auto;
         text-align: center;
     }
@@ -694,11 +699,8 @@ textarea {
 
 /* règles CSS pour les mobiles */
     {
-    header {
-        overflow: auto;
-        position: absolute;
-        z-index: 1;
-    }
+
+
 
     #fixedheader {
         display: flex;
