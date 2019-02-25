@@ -132,7 +132,7 @@ header li:hover {
     border-radius: 2px;
 }
 
-#Defilement {
+#defilement {
     background-color: rgba(0, 0, 0, 0.2);
     height: 5px;
     position: absolute;
@@ -587,7 +587,7 @@ textarea {
     }
 
     header {
-        overflow: auto;
+        overflow: hidden;
         position: absolute;
         z-index: 1;
     }
