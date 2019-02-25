@@ -201,14 +201,24 @@ h3 {
     align-items: center;
 }
 
+#illuServices{
+    flex:50%;
+}
+
+#illuServices img
+{
+    width: 100%;
+}
+
 .contenuServices {
     display: flex;
     margin-top: -20px;
     padding: 0 15px;
 }
 
-#illuServices {
-    flex: 50%;
+.listeServices
+{
+    padding-left: 0;
 }
 
 .listeServices li {
@@ -218,7 +228,6 @@ h3 {
 }
 
 .iconeService {
-
     min-width: 80px;
 }
 
@@ -321,7 +330,6 @@ h3 {
     border-radius: 5px 0 0 5px;
 }
 
-
 #tagsPortfolio li:last-child {
     border-radius: 0 5px 5px 0;
 }
@@ -329,7 +337,6 @@ h3 {
 .flechebas {
     display: none;
 }
-
 
 #tagsPortfolio li:hover {
     background: #60b5dd;
@@ -349,7 +356,6 @@ h3 {
 #grillePortfolio li {
     width: 25%;
 }
-
 
 .figPortfolio {
     position: relative;
@@ -413,7 +419,6 @@ figcaption p {
 }
 
 .plan {
-
     border: none;
     position: relative;
     margin: auto;
@@ -517,8 +522,7 @@ textarea {
 }
 
 
-@media screen and (min-width:901px) and (max-width: 1140px)
-
+@media screen and (min-width:1001px) and (max-width: 1200px)
 /*pour les petits écrans d'ordinateurs*/
     {
     #fixedheader {
@@ -550,8 +554,6 @@ textarea {
         font-size: 1.3em;
     }
 
-
-
     #grillePortfolio {
         display: flex;
         justify-content: space-between;
@@ -572,7 +574,7 @@ textarea {
 }
 
 
-@media all and (max-width: 900px)
+@media all and (max-width: 1000px)
 /*pour les écrans de moins de 900px de large, comme les tablettes */
 
     {
@@ -650,13 +652,17 @@ textarea {
         flex-wrap: wrap;
     }
 
+.listeServices{
+    padding-left: 20px;
+}
+
     #illuServices {
         margin: auto;
         text-align: center;
     }
 
     #illuServices img {
-        width: 70%;
+        width: 80%;
     }
 
     #grillePortfolio li {
