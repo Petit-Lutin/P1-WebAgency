@@ -522,7 +522,7 @@ textarea {
 }
 
 
-@media screen and (min-width:1001px) and (max-width: 1200px)
+@media screen and (min-width:901px) and (max-width: 1200px)
 /*pour les petits écrans d'ordinateurs*/
     {
     #fixedheader {
@@ -574,7 +574,7 @@ textarea {
 }
 
 
-@media all and (max-width: 1000px)
+@media all and (max-width: 900px)
 /*pour les écrans de moins de 900px de large, comme les tablettes */
 
     {
