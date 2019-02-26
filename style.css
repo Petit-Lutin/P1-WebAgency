@@ -23,7 +23,6 @@ header {
     align-items: center;
 }
 
-
 li {
     list-style-type: none;
 }
@@ -95,7 +94,6 @@ header li:hover {
 }
 
 #descriptionSlider {
-
     position: absolute;
     top: 25%;
     left: 10%;
@@ -142,7 +140,6 @@ header li:hover {
 }
 
 #barreDefilement {
-
     background-color: #5cadd3;
     width: 12.5%;
     height: 5px;
@@ -194,19 +191,17 @@ h3 {
     z-index: 1;
 }
 
-
 .pointEtLigne {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#illuServices{
-    flex:50%;
+#illuServices {
+    flex: 50%;
 }
 
-#illuServices img
-{
+#illuServices img {
     width: 100%;
 }
 
@@ -216,8 +211,7 @@ h3 {
     padding: 0 15px;
 }
 
-.listeServices
-{
+.listeServices {
     padding-left: 0;
 }
 
@@ -278,7 +272,6 @@ h3 {
 }
 
 #tagsPortfolio {
-
     margin-bottom: 20px;
     position: relative;
     text-align: center;
@@ -308,13 +301,11 @@ h3 {
     height: 15px;
 }
 
-
 #tagsPortfolio li:first-child>a,
 #tagsPortfolio li:hover>a {
     /*action 1 -> action 2 */
     color: #ffffff;
 }
-
 
 #tagsPortfolio li:first-child>.flechebas,
 #tagsPortfolio li:hover>.flechebas {
@@ -409,7 +400,6 @@ figcaption p {
     right: 10px;
     z-index: 2;
 }
-
 
 /*----------------------------- partie contact */
 
@@ -570,13 +560,11 @@ textarea {
         font-size: 0.9em;
         height: auto;
     }
-
 }
 
 
 @media all and (max-width: 900px)
 /*pour les écrans de moins de 900px de large, comme les tablettes */
-
     {
     #logo {
         flex: 100%;
@@ -641,6 +629,9 @@ textarea {
     #descriptionSlider {
         top: 8%;
     }
+    #descriptionSlider p {
+        margin-top: -10px;
+    }
 
     nav {
         text-align: center;
@@ -652,9 +643,9 @@ textarea {
         flex-wrap: wrap;
     }
 
-.listeServices{
-    padding-left: 20px;
-}
+    .listeServices {
+        padding-left: 20px;
+    }
 
     #illuServices {
         margin: auto;
@@ -697,17 +688,12 @@ textarea {
         right: 10px;
         z-index: 2;
     }
-
 }
 
 
 @media all and (max-device-width: 500px)
-
 /* règles CSS pour les mobiles */
     {
-
-
-
     #fixedheader {
         display: flex;
         width: 100%;
@@ -853,7 +839,6 @@ textarea {
     iframe {
         height: 200px;
     }
-
 
     form {
         position: relative;
